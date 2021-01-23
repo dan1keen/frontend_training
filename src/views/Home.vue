@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <ul>
+      <li v-for="news in newsList" :key="news.id">{{ news.name }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import mainApi from '@/api/main';
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: 'McvHome',
+  data() {
+    return {
+      newsList: [],
+    };
+  },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      mainApi.getHomeInfo().then((response) => {
+        this.newsList = response.data.items;
+      });
+    },
+  },
+};
 </script>
+
+<style scoped></style>
