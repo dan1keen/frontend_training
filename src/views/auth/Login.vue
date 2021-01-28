@@ -9,7 +9,7 @@
               Need an account?
             </router-link>
           </p>
-          VALIDATION ERRORS
+          <!--          VALIDATION ERRORS-->
           <form @submit.prevent="handleSubmit">
             <fieldset class="form-group">
               <input
@@ -33,7 +33,6 @@
             >
               Sign In
             </button>
-            {{ is_submitting }}
           </form>
         </div>
       </div>
