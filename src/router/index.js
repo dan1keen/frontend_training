@@ -37,7 +37,7 @@ const routes = [
     path: '/editor',
     name: 'editor',
     meta: {
-      auth: true,
+      hideForAuth: true,
     },
     component: Editor,
   },

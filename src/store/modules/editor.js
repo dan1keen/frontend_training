@@ -22,33 +22,6 @@ const actions = {
         items: [
           {
             html:
-              '<div>\n' +
-              '  <b-carousel\n' +
-              '    id="carousel-fade"\n' +
-              '    style="text-shadow: 0px 0px 2px #000"\n' +
-              '    fade\n' +
-              '    indicators\n' +
-              '    img-width="1024"\n' +
-              '    img-height="480"\n' +
-              '  >\n' +
-              '    <b-carousel-slide\n' +
-              '      caption="First slide"\n' +
-              '      img-src="https://picsum.photos/1024/480/?image=10"\n' +
-              '    ></b-carousel-slide>\n' +
-              '    <b-carousel-slide\n' +
-              '      caption="Second Slide"\n' +
-              '      img-src="https://picsum.photos/1024/480/?image=12"\n' +
-              '    ></b-carousel-slide>\n' +
-              '    <b-carousel-slide\n' +
-              '      caption="Third Slide"\n' +
-              '      img-src="https://picsum.photos/1024/480/?image=22"\n' +
-              '    ></b-carousel-slide>\n' +
-              '  </b-carousel>\n' +
-              '</div>',
-            preview: 'https://picsum.photos/900/250/?image=3',
-          },
-          {
-            html:
               '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">\n' +
               '        <div class="carousel-inner">\n' +
               '            <div class="carousel-item active">\n' +
@@ -72,89 +45,75 @@ const actions = {
               '    </div> ',
             preview: 'https://picsum.photos/900/250/?image=3',
           },
+          {
+            html:
+              '<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>\n' +
+              '\n' +
+              '        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>1</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>2</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>3</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>4</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>5</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>6</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>7</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>8</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>9</h1></div>\n' +
+              '            </li>\n' +
+              '            <li>\n' +
+              '                <img src="https://picsum.photos/900/250/?image=3" alt="">\n' +
+              '                <div class="uk-position-center uk-panel"><h1>10</h1></div>\n' +
+              '            </li>\n' +
+              '        </ul>\n' +
+              '\n' +
+              '        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>\n' +
+              '        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>\n' +
+              '\n' +
+              '    </div>',
+            preview: 'https://picsum.photos/900/250/?image=3',
+          },
         ],
       },
       {
-        name: 'Медиа',
+        name: 'Карточки',
         items: [
           {
             html:
-              '<div>\n' +
-              '  <b-card>\n' +
-              '    <b-media>\n' +
-              '      <template #aside>\n' +
-              '        <b-img blank blank-color="#ccc" width="64" alt="placeholder"></b-img>\n' +
-              '      </template>\n' +
-              '\n' +
-              '      <h5 class="mt-0">Media Title</h5>\n' +
-              '      <p>\n' +
-              '        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n' +
-              '        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n' +
-              '        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n' +
-              '      </p>\n' +
-              '      <p>\n' +
-              '        Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque\n' +
-              '        penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n' +
-              '      </p>\n' +
-              '\n' +
-              '      <b-media>\n' +
-              '        <template #aside>\n' +
-              '          <b-img blank blank-color="#ccc" width="64" alt="placeholder"></b-img>\n' +
-              '        </template>\n' +
-              '\n' +
-              '        <h5 class="mt-0">Nested Media</h5>\n' +
-              '        <p class="mb-0">\n' +
-              '          Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in\n' +
-              '          faucibus.\n' +
-              '        </p>\n' +
-              '      </b-media>\n' +
-              '    </b-media>\n' +
-              '  </b-card>\n' +
-              '</div>',
-            preview: 'https://picsum.photos/900/250/?image=3',
-          },
-          {
-            html:
-              '<div>\n' +
-              '  <ul class="list-unstyled">\n' +
-              '    <b-media tag="li">\n' +
-              '      <template #aside>\n' +
-              '        <b-img blank blank-color="#abc" width="64" alt="placeholder"></b-img>\n' +
-              '      </template>\n' +
-              '      <h5 class="mt-0 mb-1">List-based media object</h5>\n' +
-              '      <p class="mb-0">\n' +
-              '        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n' +
-              '        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n' +
-              '        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n' +
-              '      </p>\n' +
-              '    </b-media>\n' +
-              '\n' +
-              '    <b-media tag="li" class="my-4">\n' +
-              '      <template #aside>\n' +
-              '       <b-img blank blank-color="#cba" width="64" alt="placeholder"></b-img>\n' +
-              '      </template>\n' +
-              '\n' +
-              '      <h5 class="mt-0 mb-1">List-based media object</h5>\n' +
-              '      <p class="mb-0">\n' +
-              '        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n' +
-              '        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n' +
-              '        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n' +
-              '      </p>\n' +
-              '    </b-media>\n' +
-              '\n' +
-              '    <b-media tag="li">\n' +
-              '      <template #aside>\n' +
-              '        <b-img blank blank-color="#bac" width="64" alt="placeholder"></b-img>\n' +
-              '      </template>\n' +
-              '\n' +
-              '      <h5 class="mt-0 mb-1">List-based media object</h5>\n' +
-              '      <p class="mb-0">\n' +
-              '        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n' +
-              '        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n' +
-              '        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n' +
-              '      </p>\n' +
-              '    </b-media>\n' +
-              '  </ul>\n' +
+              '<div class="card">\n' +
+              '  <div class="card-header">\n' +
+              '    Featured\n' +
+              '  </div>\n' +
+              '  <div class="card-body">\n' +
+              '    <h5 class="card-title">Special title treatment</h5>\n' +
+              '    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>\n' +
+              '    <a href="#" class="btn btn-primary">Go somewhere</a>\n' +
+              '  </div>\n' +
               '</div>',
             preview: 'https://picsum.photos/900/250/?image=3',
           },
